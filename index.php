@@ -97,8 +97,7 @@ echo '<?xml version="1.0" encoding="iso-8859-1"?>';
                     <img src="img/luis.jpg" alt="<?php echo $L == 'en' ? 'Luis Diaz Angulo' : 'Luis M. Díaz Angulo'; ?>" width="359" height="359"/>
                     <div class="name"><?php echo $L == 'en' ? 'Luis Diaz Angulo' : 'Luis M. Díaz Angulo'; ?></div>
                     <div class="aftername">
-                        <?php echo $L == 'en' ? 'Researcher at' : 'Investigador en la'; ?>
-                        <a href="http://www.ugr.es"><?php echo $L == 'en' ? 'University of Granada' : 'Universidad de Granada'; ?></a><br/>
+                        <?php echo $L == 'en' ? 'Researcher at' : 'Investigador en la'; ?> <a href="http://www.ugr.es"><?php echo $L == 'en' ? 'University of Granada' : 'Universidad de Granada'; ?></a><br/>
                         Granada
                     </div>
                 </td>
@@ -108,8 +107,8 @@ echo '<?xml version="1.0" encoding="iso-8859-1"?>';
                     <img src="img/jose.jpg" alt="<?php echo $L == 'en' ? 'Jose Diaz Angulo' : 'José María Díaz Angulo'; ?>" width="359" height="359"/>
                     <div class="name"><?php echo $L == 'en' ? 'Jose Diaz Angulo' : 'José María Díaz Angulo'; ?></div>
                     <div class="aftername">
-                        <?php echo $L == 'en' ? 'Head of Systems at' : 'Jefe de Sistemas en'; ?><a href="http://www.arkschools.org">Ark Schools</a><br/>
-                        <?php echo $L == 'en' ? 'Managing Director at' : 'Director general en'; ?><a href="http://www.aircury.com">Aircury</a><br/>
+                        <?php echo $L == 'en' ? 'Head of Systems at' : 'Jefe de Sistemas en'; ?> <a href="http://www.arkschools.org">Ark Schools</a><br/>
+                        <?php echo $L == 'en' ? 'Managing Director at' : 'Director general en'; ?> <a href="http://www.aircury.com">Aircury</a><br/>
                         <?php echo $L == 'en' ? 'London' : 'Londres'; ?>
                     </div>
                 </td>
