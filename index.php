@@ -30,7 +30,7 @@ echo '<?xml version="1.0" encoding="iso-8859-1"?>';
         <title>DiazAngulo.com</title>
         <style type="text/css">
             html {
-                font-family: Arial;
+                font-family: Arial, serif;
                 font-size: 12pt;
                 color: #555555;
             }
@@ -109,7 +109,7 @@ echo '<?xml version="1.0" encoding="iso-8859-1"?>';
                     <div class="name"><?php echo $L == 'en' ? 'Jose Diaz Angulo' : 'Jos� Mar�a D�az Angulo'; ?></div>
                     <div class="aftername">
                         <?php echo $L == 'en' ? 'Head of Systems at' : 'Jefe de Sistemas en'; ?>
-                        <a href="http://www.arkschools.org">ARK Schools</a><br/>
+                        <a href="http://www.arkschools.org">Ark Schools</a><br/>
                         <?php echo $L == 'en' ? 'London' : 'Londres'; ?>
                     </div>
                 </td>
