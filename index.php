@@ -108,8 +108,8 @@ echo '<?xml version="1.0" encoding="iso-8859-1"?>';
                     <img src="img/jose.jpg" alt="<?php echo $L == 'en' ? 'Jose Diaz Angulo' : 'Jos� Mar�a D�az Angulo'; ?>" width="359" height="359"/>
                     <div class="name"><?php echo $L == 'en' ? 'Jose Diaz Angulo' : 'Jos� Mar�a D�az Angulo'; ?></div>
                     <div class="aftername">
-                        <?php echo $L == 'en' ? 'Head of Systems at' : 'Jefe de Sistemas en'; ?>
-                        <a href="http://www.arkschools.org">Ark Schools</a><br/>
+                        <?php echo $L == 'en' ? 'Head of Systems at' : 'Jefe de Sistemas en'; ?><a href="http://www.arkschools.org">Ark Schools</a><br/>
+                        <?php echo $L == 'en' ? 'Managing Director at' : 'Director general en'; ?><a href="http://www.aircury.com">Aircury</a><br/>
                         <?php echo $L == 'en' ? 'London' : 'Londres'; ?>
                     </div>
                 </td>
