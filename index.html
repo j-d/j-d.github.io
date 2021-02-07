@@ -1,31 +1,8 @@
-<?php
-if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE']))
-    switch (strtolower(substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2))) {
-        case 'es':
-            $L = 'es';
-            break;
-        default:
-            $L = 'en';
-    }
-else {
-    $L = 'en';
-}
-
-if (isset($_GET['es'])) {
-    $L = 'es';
-}
-if (isset($_GET['en'])) {
-    $L = 'en';
-}
-
-echo '<?xml version="1.0" encoding="iso-8859-1"?>';
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; iso-8859-1"/>
         <meta name="keywords" content="diaz, angulo, diazangulo, jose, maria, luis, manuel, pagina, personal, personal, page"/>
-        <meta name="description" content="<?php echo $L == 'en' ? 'Personal page of Jose and Luis Diaz Angulo' : 'Página personal de José María y Luis M. Díaz Angulo'; ?>"/>
+        <meta name="description" content="Personal homepage of Jose and Luis Diaz Angulo"/>
 
         <title>DiazAngulo.com</title>
         <style type="text/css">
@@ -94,30 +71,30 @@ echo '<?xml version="1.0" encoding="iso-8859-1"?>';
             </tr>
             <tr>
                 <td>
-                    <img src="img/luis.jpg" alt="<?php echo $L == 'en' ? 'Luis Diaz Angulo' : 'Luis M. Díaz Angulo'; ?>" width="359" height="359"/>
-                    <div class="name"><?php echo $L == 'en' ? 'Luis Diaz Angulo' : 'Luis M. Díaz Angulo'; ?></div>
-                    <div class="aftername">
-                        <?php echo $L == 'en' ? 'Researcher at' : 'Investigador en la'; ?> <a href="http://www.ugr.es"><?php echo $L == 'en' ? 'University of Granada' : 'Universidad de Granada'; ?></a><br/>
-                        Granada
+                    <img src="img/luis.jpg" id="luis_pic" alt="Luis Diaz Angulo" width="359" height="359"/>
+                    <div class="name" id="luis_name">Luis Diaz Angulo</div>
+                    <div class="aftername" id="luis_title">
+                        Researcher at <a href="http://www.ugr.es">University of Granada</a><br>Granada
                     </div>
                 </td>
                 <td style="width:50px;">
                 </td>
                 <td>
-                    <img src="img/jose.jpg" alt="<?php echo $L == 'en' ? 'Jose Diaz Angulo' : 'José María Díaz Angulo'; ?>" width="359" height="359"/>
-                    <div class="name"><?php echo $L == 'en' ? 'Jose Diaz Angulo' : 'José María Díaz Angulo'; ?></div>
-                    <div class="aftername">
-                        <?php echo $L == 'en' ? 'Head of Systems at' : 'Jefe de Sistemas en'; ?> <a href="http://www.arkschools.org">Ark Schools</a><br/>
-                        <?php echo $L == 'en' ? 'Managing Director at' : 'Director general en'; ?> <a href="http://www.aircury.com">Aircury</a><br/>
-                        <?php echo $L == 'en' ? 'London' : 'Londres'; ?>
+                    <img src="img/jose.jpg" id="jose_pic" alt="Jose Diaz Angulo" width="359" height="359"/>
+                    <div class="name" id="jose_name">Jose Diaz Angulo</div>
+                    <div class="aftername" id="jose_title">
+                        Managing Director at <a href="http://www.aircury.com">Aircury</a><br>London
                     </div>
                 </td>
             </tr>
             <tr>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+            <tr>
                 <td class="leftMargin">
                     <p>
-                        <a href="http://scholar.google.co.uk/citations?user=GG4ZAOgAAAAJ"><img src="img/paper.png" alt="<?php echo $L == 'en' ? 'Papers' : 'Publicaciones'; ?>" width="16" height="16"/></a>
-                        <a href="http://scholar.google.co.uk/citations?user=GG4ZAOgAAAAJ"><?php echo $L == 'en' ? 'Papers' : 'Publicaciones'; ?></a>
+                        <a href="http://scholar.google.co.uk/citations?user=GG4ZAOgAAAAJ"><img src="img/paper.png" alt="Papers" width="16" height="16" id="papers_img"/></a>
+                        <a href="http://scholar.google.co.uk/citations?user=GG4ZAOgAAAAJ" id="papers_label">Papers</a>
                     </p>
                     <p>
                         <a href="http://www.researchgate.net/profile/Luis_Angulo5/"><img src="img/researchgate.png" alt="ResearchGate" width="16" height="16"/></a>
@@ -140,8 +117,8 @@ echo '<?xml version="1.0" encoding="iso-8859-1"?>';
                         <a href="https://plus.google.com/112698550595059288917">Google+</a>
                     </p>
                     <p>
-                        <a href="http://www.google.com/recaptcha/mailhide/d?k=01gZWah3dyK_GQ7MGTsbe-Mw==&amp;c=wy6VzAn_uO-vNLpOO8GM3dJnYBYzUHJYa_KYiDxDDiI=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501gZWah3dyK_GQ7MGTsbe-Mw\75\75\46c\75wy6VzAn_uO-vNLpOO8GM3dJnYBYzUHJYa_KYiDxDDiI\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="<?php echo $L == 'en' ? 'Show email address' : 'Muestra la dirección de correo'; ?>"><img src="img/email.png" alt="Email" width="16" height="16"/></a>
-                        <a href="http://www.google.com/recaptcha/mailhide/d?k=01gZWah3dyK_GQ7MGTsbe-Mw==&amp;c=wy6VzAn_uO-vNLpOO8GM3dJnYBYzUHJYa_KYiDxDDiI=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501gZWah3dyK_GQ7MGTsbe-Mw\75\75\46c\75wy6VzAn_uO-vNLpOO8GM3dJnYBYzUHJYa_KYiDxDDiI\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="<?php echo $L == 'en' ? 'Show email address' : 'Muestra la dirección de correo'; ?>">Email</a>
+                        <a id="luis_email_img" href="#" data-contact="bG1AZGlhemFuZ3Vsby5jb20=" onfocus="this.href = 'mailto:' + atob(this.dataset.contact)" title="Show email address"><img src="img/email.png" alt="Email" width="16" height="16"/></a>
+                        <a id="luis_email" href="#" data-contact="bG1AZGlhemFuZ3Vsby5jb20=" onfocus="this.href = 'mailto:' + atob(this.dataset.contact)" title="Show email address">Email</a>
                     </p>
                 </td>
                 <td>
@@ -164,11 +141,57 @@ echo '<?xml version="1.0" encoding="iso-8859-1"?>';
                         <a href="https://plus.google.com/106009568255025372653">Google+</a>
                     </p>
                     <p>
-                        <a href="http://www.google.com/recaptcha/mailhide/d?k=01gZWah3dyK_GQ7MGTsbe-Mw==&amp;c=6gyPlBZHuvQwPKvZlyP_ivLvym3IgbekqtQzwTSgCVY=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501gZWah3dyK_GQ7MGTsbe-Mw\75\75\46c\0756gyPlBZHuvQwPKvZlyP_ivLvym3IgbekqtQzwTSgCVY\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="<?php echo $L == 'en' ? 'Show email address' : 'Muestra la dirección de correo'; ?>"><img src="img/email.png" alt="Email" width="16" height="16"/></a>
-                        <a href="http://www.google.com/recaptcha/mailhide/d?k=01gZWah3dyK_GQ7MGTsbe-Mw==&amp;c=6gyPlBZHuvQwPKvZlyP_ivLvym3IgbekqtQzwTSgCVY=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501gZWah3dyK_GQ7MGTsbe-Mw\75\75\46c\0756gyPlBZHuvQwPKvZlyP_ivLvym3IgbekqtQzwTSgCVY\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="<?php echo $L == 'en' ? 'Show email address' : 'Muestra la dirección de correo'; ?>">Email</a>
+                        <a id="jose_email_img" href="#" data-contact="am1AZGlhemFuZ3Vsby5jb20=" onfocus="this.href = 'mailto:' + atob(this.dataset.contact)" title="Show email address"><img src="img/email.png" alt="Email" width="16" height="16"/></a>
+                        <a id="jose_email" href="#" data-contact="am1AZGlhemFuZ3Vsby5jb20=" onfocus="this.href = 'mailto:' + atob(this.dataset.contact)" title="Show email address">Email</a>
                     </p>
                 </td>
             </tr>
         </table>
     </body>
+    <script>
+        let lang = navigator.languages
+            ? navigator.languages[0].slice(0,2)
+            : (navigator.language.slice(0,2) || navigator.userLanguage).slice(0,2);
+
+        const urlParams = new URLSearchParams(window.location.search);
+
+        if (urlParams.has('en')) {
+            lang = 'en';
+        } else if (urlParams.has('es')) {
+            lang = 'es';
+        } else if (lang !== 'en' && lang !== 'es') {
+            lang = 'en';
+        }
+
+        if (lang === 'es') {
+            const texts = {
+                description: 'Página personal de José María y Luis M. Díaz Angulo',
+                luis: 'Luis M. Díaz Angulo',
+                luis_title: 'Investigador en la <a href="http://www.ugr.es">Universidad de Granada</a><br>Granada',
+                jose: 'José María Díaz Angulo',
+                jose_title: 'Director general en <a href="http://www.aircury.es">Aircury</a><br>Londres',
+                papers: 'Publicaciones',
+                show_email: 'Muestra la dirección de correo',
+            };
+
+            document.getElementsByTagName('html')[0].setAttribute('lang', 'es');
+
+            document.getElementById('luis_pic').setAttribute('alt', texts['luis']);
+            document.getElementById('jose_pic').setAttribute('alt', texts['jose']);
+
+            document.getElementById('luis_name').innerHTML = texts['luis'];
+            document.getElementById('jose_name').innerHTML = texts['jose'];
+
+            document.getElementById('luis_title').innerHTML = texts['luis_title'];
+            document.getElementById('jose_title').innerHTML = texts['jose_title'];
+
+            document.getElementById('papers_img').setAttribute('alt', texts['papers']);
+            document.getElementById('papers_label').innerHTML = texts['papers'];
+
+            document.getElementById('luis_email_img').setAttribute('title', texts['show_email']);
+            document.getElementById('luis_email').setAttribute('title', texts['show_email']);
+            document.getElementById('jose_email_img').setAttribute('title', texts['show_email']);
+            document.getElementById('jose_email').setAttribute('title', texts['show_email']);
+        }
+    </script>
 </html>
